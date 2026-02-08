@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Rippl - Gamified Volunteering",
+  "description": "A world-class gamified volunteering platform connecting changemakers with high-impact social missions through skill-based matching, progress tracking, and reward systems.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

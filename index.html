@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rippl | Professional Social Impact</title>
+  <script>
+    window.process = { 
+      env: { 
+        API_KEY: "",
+        NODE_ENV: "production"
+      } 
+    };
+  </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.16.0?external=react,react-dom",
+    "recharts": "https://esm.sh/recharts@2.12.0?external=react,react-dom",
+    "framer-motion": "https://esm.sh/framer-motion@10.16.4?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@0.21.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  
+  <script>
+    window.tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#13ec6d',
+            secondary: '#4c9a6c',
+            'background-light': '#f6f8f7',
+            'background-dark': '#0a140f',
+            'card-light': '#ffffff',
+            'card-dark': '#121f18',
+            'border-light': '#e7f3ec',
+            'border-dark': '#1e2e25'
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { 
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .fill-1 { font-variation-settings: 'FILL' 1; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    * { transition: background-color 0.2s ease, border-color 0.2s ease; }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+  <div id="root"></div>
+</body>
+</html>
